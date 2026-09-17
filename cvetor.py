@@ -140,9 +140,21 @@ class cVetor:
         return self.numcomp
 
 # *******************************************************
-    def ordenaInsercao(self):
-        self.numComp = 0
-        return self.numComp
+  def ordenaInsercao(self):
+    for i in range(1, len(self.vet)):
+        atual = self.vet[i]
+        j = i - 1
+
+        while j >= 0 and self.vet[j] > atual:
+            self.numcomp += 1
+            self.vet[j + 1] = self.vet[j]
+            j -= 1
+
+        self.vet[j + 1] = atual
+
+    return self.numcomp
+
+       
 
 # *******************************************************
     def ordenaBolha(self):
