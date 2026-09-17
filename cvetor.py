@@ -129,14 +129,13 @@ class cVetor:
    
 
     def ordenaSelecao(self):
-        for i in range(self - 1): 
+        for i in range(len(self.vet) - 1): 
             min = i
-        for j in range(j + 1, self):
-            j = i + 1
+        for j in range(i + 1,(len(self.vet)):
+            self.numcom += 1
         if self.vet(i) < self[min]:
             min = j
-        self.vet[min].sef.vet[i]
-        self.vet[i].self.vet[min]
+        self.vet[i], self.vet[min] = self.vet[min], self.vet[i]
 
         return self.numcomp
 
