@@ -158,7 +158,18 @@ class cVetor:
 
 # *******************************************************
     def ordenaBolha(self):
-        self.numComp = 0
+        for i in range (len(self.vet) - 1):
+             for j in range(len(sel.vet) - i - 1):
+                 self.numcomp += 1
+                 
+                 if self.vet[j] > self.vet[j+1]:
+                    self.vet[j], self.vet[j + 1] = self.vet[j + 1], self.vet[j]
+
+        return self.numcomp
+                     
+
+                  
+                     
         return self.numComp
 
     
